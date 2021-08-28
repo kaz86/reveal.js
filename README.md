@@ -1,28 +1,47 @@
-<p align="center">
-  <a href="https://revealjs.com">
-  <img src="https://hakim-static.s3.amazonaws.com/reveal-js/logo/v1/reveal-black-text.svg" alt="reveal.js" width="450">
-  </a>
-  <br><br>
-  <a href="https://github.com/hakimel/reveal.js/actions"><img src="https://github.com/hakimel/reveal.js/workflows/tests/badge.svg"></a>
-  <a href="https://slides.com/"><img src="https://s3.amazonaws.com/static.slid.es/images/slides-github-banner-320x40.png?1" alt="Slides" width="160" height="20"></a>
-</p>
+# reveal.js導入のすすめ
 
-reveal.js is an open source HTML presentation framework. It enables anyone with a web browser to create fully featured and beautiful presentations for free. [Check out the live demo](https://revealjs.com/).
+---
 
-The framework comes with a broad range of features including [nested slides](https://revealjs.com/vertical-slides/), [Markdown support](https://revealjs.com/markdown/), [Auto-Animate](https://revealjs.com/auto-animate/), [PDF export](https://revealjs.com/pdf-export/), [speaker notes](https://revealjs.com/speaker-view/), [LaTeX support](https://revealjs.com/math/), [syntax highlighted code](https://revealjs.com/code/) and much more.
+## メリデメ
 
-<h1>
-  <a href="https://revealjs.com/installation" style="font-size: 3em;">Get Started</a>
-</h1>
+### メリット
+* 簡単にスライドを作成できる
+ * Markdownで書ける
+ * GitHubPagesで静的webページとして公開できる
+ * 頑張らなくてもデザインがかっこいい
+* ソースコードを示しやすい
+ * コピペで変なスペースや改行がはいらない（はず）
+ * シンタックスハイライトに対応
 
-## Documentation
-The full reveal.js documentation is available at [revealjs.com](https://revealjs.com).
+### デメリット
+* 図の掲載が面倒だし作図はできない
+* パワポのような直感的なレイアウト調整はできない
+* 学会発表などで使うには少し勇気が必要
+　（使ってる方ごめんなさい）
 
-## Online Editor
-Want to create your presentation using a visual editor? Try the official reveal.js presentation platform for free at [Slides.com](https://slides.com). It's made by the same people behind reveal.js.
+---
 
-## License
+## 導入手順(簡易版)
 
-MIT licensed
+### VSCodeの拡張機能として導入する場合
+拡張機能の検索窓から以下を検索する．
+vscode-reveal
 
-Copyright (C) 2011-2021 Hakim El Hattab, https://hakim.se
+### GitHubPagesで公開する場合
+以下のGitをクローンする．
+（※今回は利用させていただくだけなので，フォークはしない）
+https://github.com/hakimel/reveal.js/
+
+基本的にやらないといけないことは大きく以下の2点
+* マークダウンファイルを追加する．
+（mdディレクトリなどを作成するとよいかも）
+* index.htmlを編集する．
+
+---
+
+## スライド操作方法
+* "Esc"ボタンでスライド一覧の表示
+* "左右"キーで次の章に移動
+* "上下"キーで次の節に移動
+* "F11" or "F"キーで全画面表示
+* "b" or "/" or "."キーでブラックアウト
