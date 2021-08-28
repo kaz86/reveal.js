@@ -1,14 +1,18 @@
 <!doctype html>
 <html>
 	<head>
+		<!-- <meta charset="utf-8"> -->
+		<!-- <meta charset="Shift_JIS"> -->
+		<!-- <meta charset="shft-jis"> -->
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+		<title>test11</title>
 
 		<link rel="stylesheet" href="dist/reset.css">
 		<link rel="stylesheet" href="dist/reveal.css">
-		<link rel="stylesheet" href="dist/theme/black.css">
+		<!-- <link rel="stylesheet" href="dist/theme/black.css"> -->
+		<link rel="stylesheet" href="dist/theme/white.css">
 
 		<!-- Theme used for syntax highlighted code -->
 		<link rel="stylesheet" href="plugin/highlight/monokai.css">
@@ -16,8 +20,11 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>テスト　Slide 1</section>
-				<section>Slide 2</section>
+			<section data-markdown="./md/handson.md"
+				data-separator="^\n---\n"
+				data-separator-vertical="^\n--\n"
+				data-separator-notes="^Note:">				 
+			</section>
 			</div>
 		</div>
 
@@ -31,7 +38,21 @@
 			// - https://revealjs.com/config/
 			Reveal.initialize({
 				hash: true,
+				
+				//設定については以下を参照している
+				//https://qiita.com/takayu90/items/0af9bd125e6704803c0d
+				
+				// スライドのページ番号を表示する
+				slideNumber: true,
 
+ 				// スライド遷移アニメーション
+  				// none / fade / slide / convex / concave / zoom
+  				transition: 'slide',				
+				
+				// スライド遷移スピード
+				// default / fast / slow
+				transitionSpeed: 'default',
+				
 				// Learn about plugins: https://revealjs.com/plugins/
 				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
 			});
